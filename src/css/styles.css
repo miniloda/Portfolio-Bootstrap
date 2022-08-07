@@ -13,9 +13,120 @@ body{
     height: 100vh;
 
 }
+/* scroll-down indicator */
+.scroll-down{
+    margin-top: -200px;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+
+.box a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	transform: rotate(45deg);
+	animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+.about{
+    scroll-behavior: smooth; 
+}
 .profile-picture{
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 p{
     font-size: 32px;
 }
+.bg-body{
+    background-color: #24283b !important;
+}
+/* Left social media links */
+.bplQwv {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: var(--light-slate);
+  }
+  .bplQwv:hover {
+    color: var(--light-slate);
+  }
+  .jruSna img {
+    transition: 0.5s;
+    width: 30px;
+    height: 40px;
+    margin-bottom: 20px;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+    cursor: pointer;
+}
+  .jruSna li {
+    display: inline;
+  }
+  
+  .jruSna li a img:hover {
+   transform: translateY(-5px);
+   z-index: 2;
+   -webkit-transform: translateY(-5px);
+   -moz-transform: translateY(-5px);
+   -ms-transform: translateY(-5px);
+   -o-transform: translateY(-5px);
+  }
+  .jruSna ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .jruSna:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin-left: 10px;
+    background-color: gray;
+  }
