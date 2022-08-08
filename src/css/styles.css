@@ -39,17 +39,31 @@ i{
 }
 
 /* Lines of the Toggler */
+.navbar-toggler{
+  display:flex !important;
+  justify-content:flex-end;
+  align-items:flex-end;
+  flex-direction: column;
+}
 .toggler-icon{
     width: 30px;
     height: 3px;
     background-color: #e74c3c;
     display: block;
     transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
 }
 
 /* Adds Space between the lines */
 .middle-bar{
-    margin: 5px auto;
+    margin: 5px 0;
+    width: 20px;
+}
+.bottom-bar{
+  width:10px;
 }
 
 /* State when navbar is opened (START) */
@@ -146,9 +160,6 @@ i{
     font-size: 40px;
 }
 /* scroll-down indicator */
-.scroll-down{
-    margin-top: -10rem;
-}
 @media only screen and (max-width: 768px){
     .box{
         display:none !important;
@@ -160,11 +171,15 @@ i{
         display:none;
     }
 }
-    
+.scroll-down .col-12{
+    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -15rem;
+}
 .box{
-	position: absolute;
-	top: 50%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	cursor: pointer;
 	-webkit-transform: translate(-50%, -50%);
@@ -172,7 +187,9 @@ i{
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 }
-
+.box a{
+ margin: 0 auto;
+}
 .box a{
 	display: block;
 	width: 20px;

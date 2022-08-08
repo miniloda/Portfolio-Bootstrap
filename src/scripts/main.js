@@ -62,3 +62,25 @@ $('a[href*="#"]')
       }
     }
   });
+let navEnabled = false;
+document.querySelector(".navbar-toggler").addEventListener(("click"), ()=>{
+  let counter = 0;
+document.querySelectorAll(".toggler-icon").forEach(function(element){
+  console.log(element)
+    if(!navEnabled){
+    element.style.width = "30px";
+    }else{
+        
+        if(counter == 0){
+        element.style.width = "30px";
+        } else if(counter == 1){
+            element.style.width = "20px";
+        }else{
+            element.style.width = "10px";
+        }
+
+    }
+    counter++;
+})
+navEnabled = !navEnabled;
+});
