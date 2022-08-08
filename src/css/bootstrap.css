@@ -10,7 +10,7 @@
 /* for paragraph */
 @media(min-width: 768px){
     p{
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 }
 @media(max-width: 768px){
