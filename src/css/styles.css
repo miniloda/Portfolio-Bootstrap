@@ -126,9 +126,9 @@ i{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-p{
+/* p{
     font-size: 32px;
-}
+} */
 /* overrides the background-color using the background color of the body */
 .bg-body{
     background-color: #24283b !important;
