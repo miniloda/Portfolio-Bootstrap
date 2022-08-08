@@ -1,22 +1,71 @@
 html{
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 body{
+    font-family: 'Courier New', Courier, monospace !important;
     margin:0;
     padding:0;
     background-color: #24283b !important;
     color: whitesmoke !important;
+}
+/*start of general styles */
+a{
+    text-decoration: none !important;
+}
+img.filter {
+	-webkit-filter: drop-shadow(5px 2.5px 5px #020514);
+	filter: drop-shadow(5px 2.5px 5px #020514);
+}
 
-} .banner{
+/* end of general styles */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* end of general styles */
+/* start of banner */
+.banner{
     height: 100vh;
-
+}
+.icon{
+    display:flex;
+    justify-content:center;
+}
+i{
+    font-size: 40px;
 }
 /* scroll-down indicator */
 .scroll-down{
-    margin-top: -200px;
+    margin-top: -10rem;
 }
+@media only screen and (max-width: 768px){
+    .box{
+        display:none;
+    }
+}
+    
 .box{
 	position: absolute;
 	top: 50%;
@@ -63,6 +112,10 @@ body{
 		transform: rotate(45deg) translate(20px, 20px);
 	}
 }
+/* end of banner */
+
+
+/* start of about */
 .about{
     scroll-behavior: smooth; 
 }
@@ -76,10 +129,16 @@ body{
 p{
     font-size: 32px;
 }
+/* overrides the background-color using the background color of the body */
 .bg-body{
     background-color: #24283b !important;
 }
 /* Left social media links */
+@media only screen and (max-width: 1400px){
+    .social-media{
+        display: none;
+    }
+}
 .bplQwv {
     width: 40px;
     position: fixed;
@@ -130,3 +189,10 @@ p{
     margin-left: 10px;
     background-color: gray;
   }
+  /* start of footer */
+  footer p{
+    font-size: 20px;
+    color: var(--light-slate);
+  }
+
+

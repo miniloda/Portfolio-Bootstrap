@@ -11,7 +11,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="stylesheet" href="src/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,17 +24,22 @@
                 sadas
             </nav> -->
         </header>
-        <div class="banner">
+        <div class="banner vh-100">
             <div class="container-fluid h-100 mt-5 d-flex flex-column justify-content-center">
                 <div class="row">
                     <div class="col-12 h-100" >
                         <div class="container">
                             <div class="row">
 <div class="col-lg-6 col-sm-12 flex-sm-row justify-content-center align-items-center d-flex">
-                            <img src="src/assets/profile (1).jpg" alt="profile picture" width="400" class = "img-fluid profile-picture">
+                            <img src="src/assets/profile (1).jpg" alt="profile picture" width="400" class = "img-fluid profile-picture filter">
                         </div>
                         <div class="col-12 mt-sm-5 col-lg-6">
-                            <h1>Hello! This is made using bootstrap!</h1>
+                            <h2>Hello World! I am</h2> 
+                            <h1>Jacob Maximus Usaraga</h1>
+                            <div class="icon">
+                                <p>This was made using</p>
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            </div>
                         </div>
                     </div>
                         </div>
@@ -49,12 +56,11 @@
                         </div>
                     </div>
                 </div>
-        </div>
-        <div orientation = "left" class = "side__StyleSideElement-gHFCsN bplQwv" id = "div_test">
+        <div orientation = "left" class = "side__StyleSideElement-gHFCsN bplQwv social-media" id = "div_test">
             <ul class="social__StyledSocialList-ghHet jruSna fade-enter-done" id ="test">
-              <li><a href = "https://www.facebook.com/profile.php?id=100011262120429" target = "_blank" title = "Facebook"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg" />
+              <li><a href = "https://www.facebook.com/profile.php?id=100011262120429" target = "_blank" title = "Facebook" noopener><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-plain.svg" title = "facebook" noopener/>
               </a></li>
-              <li><a href = "https://twitter.com/makisekarissa" target="_blank" title = "Twitter"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" /></a></li>
+              <li><a href = "https://twitter.com/makisekarissa" target="_blank" title = "Twitter" noopener><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" /></a></li>
               <li><a href = "https://www.github.com/miniloda" target="_blank" title = "GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a></li>
               <li><a href = "https://www.linkedin.com/in/jacob-maximus-usaraga-00565b220/" target="_blank" title = "linkedin"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /></a></li>
             </ul>
@@ -63,13 +69,15 @@
             <div class="main container">
                 <div class="row flex-column justify-content-center align-items-center d-flex about" >
 
-                    <div class="col-12 p-5 " id = "about">
+                    <div class="col-12 p-lg-5 ">
                         <div class="row flex-row justify-content-center">
-                            <div class="col-12 ">
+                            <div class="col-12" id = "about">
                         <h1 class = "text-center">About Me</h1>  <div class="card bg-body">
 
-                        <p class="p-5">I am an aspiring self-taught full-stack web developer. I love building things and developing things that is logical. My love for these enabled me to strive to become a full-stack web developer. I am still an applied mathematics student and I learn web development through online learning, gathering <a href = "">certificates</a>!</p></div>
+                        <p class="p-lg-5">I am an aspiring self-taught full-stack web developer. I love building things and developing things that is logical. My love for these enabled me to strive to become a full-stack web developer. I am still an applied mathematics student at the <a href="#" class = "hover-underline-animation"> University of the Philippines</a> I learn web development through online learning, gathering <a href = "#certificates" class = "hover-underline-animation">certificates</a>!</p></div>
                             </div>
+                            </div>
+                            <div class="row vh-25"></div>
             <!-- skills part -->
                 <div class="row mt-5 skills">
                     <div class="col-12">
@@ -79,19 +87,147 @@
                                 <h2>Frontend</h2>
                             </div>
                             <div class="col-6">
-                                
+                               <div class="d-flex justify-content-around"> 
+                                <i class="devicon-html5-plain colored" title = "html"></i>
+                                <i class="devicon-css3-plain colored" title = "css"></i>
+                                <i class="devicon-javascript-plain colored" title = "javascript"></i>
+                                <i class="devicon-react-original-wordmark colored" title = "React"></i>
+                                <i class="devicon-bootstrap-plain colored" title = "Bootstrap"></i>
+
+                               </div> 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-6">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <i class="devicon-express-original-wordmark colored"></i>
+                        <i class="devicon-mongodb-plain colored"></i>
+                        <i class="devicon-mysql-plain colored"></i>
 
+                    </div>
+                    <div class="col-6">
+                        <h2>Backend</h2>
+                    </div>
                 </div>
             </div>
                     </div>
                 </div>
-                    <div></div>
-            </div>
+                <!-- start of projects section -->
+                <div class="container">
+                <div class="row projects">
+                    <div class="col-12">
+                        <h1 class="text-center">Projects</h1>
+                        <div class="row project-1">
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-12">
+                                        <div class="card border-0 bg-body shadow p-3 mb-5 rounded">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                <div class="col-8"><h5 class="card-title">Project 1</h5>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                                    <a href="#" class="btn btn-primary">Live</a>
+                                                    <a href="#" class="btn btn-primary">Repo</a></div>
+                                                <div class="col-4 border">
+                                                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top" alt="...">
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row project-2">
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-12">
+                                        <div class="card border-0 bg-body d-block shadow">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top border" alt="...">
+                                                    </div>
+                                                    <div class="col-8 text-right">
+                                                    <h5 class="card-title">Project 2</h5>
+                                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a></div>
+                                                </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                    </div>
+                    </div>
+                    <!-- end of projects section -->
+                    <div class="vh-25 bg-body">
+                        
+                    </div>
+                    <!-- start of certificates section -->
+                    <div class="container certificates" id = "certificates">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class = "text-center">Certificates</h2>
+                                <div class="container">
+                                <div class="row mt-5 mb-5">
+                                    <div class="col-4 p-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                        <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top" alt="...">
+                                            </div> 
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Certificate 1</h5>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 p-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                        <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top" alt="...">
+                                            </div> 
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Certificate 2</h5>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-4 p-5">
+                                        <div class="row">
+                                            <div class="col-12">
+                                        <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" class="card-img-top" alt="...">
+                                            </div> 
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="card-title">Certificate 3</h5>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- start of contact me section -->
+                    <section class="row">
+                        <!-- Add contact me through email -->
+
+                    </section>
+                </div>
+                
         </main>
         <footer class="container">
             <div class="row">
@@ -101,13 +237,13 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="text-center"> Designed inspired by <a href="https://brittanychiang.com/" target="_blank" noopener>Brittany Chiang</a> </p>
+                    <p class="text-center"> Design inspired by <a href="https://brittanychiang.com/" target="_blank" noopener>Brittany Chiang</a> </p>
                 </div>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="" async defer></script>
+        <script src="src/scripts/main.js" async defer></script>
     </body>
 </html>
