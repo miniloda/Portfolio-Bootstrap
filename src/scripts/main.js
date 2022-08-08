@@ -10,7 +10,6 @@ setInterval(()=>{
         $('.box').fadeOut('slow');
     }
 })
-
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() +50 >= $(document).height()) {
     $('.go-top').fadeIn('slow');
