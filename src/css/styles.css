@@ -2,6 +2,8 @@ html{
     font-size: 16px;
     line-height: 1.5;
     scroll-behavior: smooth;
+    overflow-y: scroll;
+  overflow-x: hidden;
 }
 body{
     font-family: 'Courier New', Courier, monospace !important;
@@ -116,6 +118,9 @@ li>a:hover{
     background-color: #777777;
 }
 
+.bg-brand{
+    color: #944239 !important;
+}
 /* end of navbar styles */
 
 /*  */
@@ -295,7 +300,7 @@ i{
     transition: 0.5s;
     width: 20px;
     height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
