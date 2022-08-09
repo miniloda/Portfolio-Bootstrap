@@ -466,6 +466,7 @@ i.icon:hover {
   
 
 /* start of contact me section */
+
 #contact {
   background-color: #24283b !important;
   display: flex;
@@ -487,7 +488,7 @@ i.icon:hover {
 
 
 .contact-links {
-  background-color: #1f2e43;
+  background-color: #6a82a3;
   background:
     radial-gradient(
       circle at 55% 92%, #426691 0 12%, transparent 12.2%
@@ -506,7 +507,7 @@ i.icon:hover {
 }
 
 .contact-form-wrapper {
-  background-color: #ffffff8f;
+  background-color: #525B87;
   border-radius: 0 10px 10px 0;
 }
 
@@ -532,12 +533,15 @@ i.icon:hover {
 }
 
 h2 {
-  font-family: 'Arimo', sans-serif;
   color: #fff;
   font-size: clamp(30px, 6vw, 60px);
   letter-spacing: 2px;
   text-align: center;
   transform: scale(.95, 1);
+  -webkit-transform: scale(.95, 1);
+  -moz-transform: scale(.95, 1);
+  -ms-transform: scale(.95, 1);
+  -o-transform: scale(.95, 1);
 }
 
 .links {
@@ -558,7 +562,7 @@ h2 {
   filter:     hue-rotate(220deg)    drop-shadow(2px 4px 4px #0006);
   transition: 0.2s;
   user-select: none;
-  -webkit-filter: ;
+  -webkit-filter:     hue-rotate(220deg)    drop-shadow(2px 4px 4px #0006);
 }
 
 .contact-img:hover {
@@ -656,7 +660,7 @@ textarea:valid+label {
     height: 38px;
   }
 }
-
+/* end of contact me section */
 .go-top {
   position:fixed;
   bottom: 10%;
