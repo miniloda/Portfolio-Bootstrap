@@ -1,5 +1,8 @@
 
 /* additional boostrap customization */
+.nav-item{
+    margin-left:1rem;
+}
 nav{
     top:0;
 }

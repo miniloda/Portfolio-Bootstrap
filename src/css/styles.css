@@ -64,14 +64,16 @@ li>a:hover{
 }
 
 /* Adds Space between the lines */
-.middle-bar{
+/* .middle-bar{
     margin: 5px 0;
     width: 20px;
 }
 .bottom-bar{
   width:10px;
+} */
+.middle-bar{
+  margin:5px 0;
 }
-
 /* State when navbar is opened (START) */
 .navbar-toggler .top-bar {
     transform: rotate(45deg);
@@ -371,7 +373,12 @@ i{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-
+@media only screen and (max-width: 1000px) {
+  .go-top{
+    display: none !important;
+  }
+}
+  
 .go-top {
   position:fixed;
   bottom: 10%;
