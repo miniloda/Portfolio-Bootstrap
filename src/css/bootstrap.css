@@ -1,11 +1,23 @@
 
 /* additional boostrap customization */
+nav{
+    top:0;
+}
 .vh-50{
     height: 50vh;
 }
 .vh-25{
     height: 25vh;
 }
+.banner{
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .banner{
+        height: 50vh !important;
+    }
+}
+    
 
 /* for paragraph */
 /* @media(min-width: 768px){

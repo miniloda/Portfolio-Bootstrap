@@ -21,6 +21,9 @@ img.filter {
 i{
   color:rgb(102, 82, 82);
 }
+.section-gap{
+   padding-top: 25vh;
+}
 
 /* end of general styles */
 
@@ -152,9 +155,6 @@ li>a:hover{
 
 /* end of general styles */
 /* start of banner */
-.banner{
-    height: 100vh;
-}
 .icon{
     display:flex;
     justify-content:center;
@@ -163,7 +163,7 @@ i{
     font-size: 40px;
 }
 /* scroll-down indicator */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
     .box{
         display:none !important;
     }
