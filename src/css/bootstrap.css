@@ -20,7 +20,12 @@ nav{
         height: 50vh !important;
     }
 }
-    
+@media(min-width: 970px){
+    .position-lg-absolute{
+        position: absolute !important;
+       
+    }
+}   
 
 /* for paragraph */
 /* @media(min-width: 768px){

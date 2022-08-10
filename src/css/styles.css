@@ -162,6 +162,12 @@ li>a:hover{
 
 /* end of general styles */
 /* start of banner */
+.banner-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .icon{
     display:flex;
     justify-content:center;
@@ -373,7 +379,6 @@ i{
 
 /* style all icon text */
 .icon p {
-  color: #000;
   margin: 10px 0 0 0;
   text-transform: capitalize;
   font-size: 20px;
@@ -384,12 +389,10 @@ i{
 i.icon:hover {
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
-
-/* style specific text for specific icons */
-.devicon-css3-plain p {
-  text-transform: uppercase !important;
-  color: orange;
-} 
+.devicon-github-plain>p{
+  color: rgb(184, 179, 179) !important;
+}
+/* style specific text for specific icons */ 
 
 /* how to style a specific icon */
 .devicon-github-plain {
@@ -420,6 +423,12 @@ i.icon:hover {
     display: none;
   }
   
+}
+.skills-row>i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* enf of skills */
 
