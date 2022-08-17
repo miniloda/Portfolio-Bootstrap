@@ -172,7 +172,7 @@ li>a:hover{
     display:flex;
     justify-content:center;
 }
-i{
+.devicon{
     font-size: 40px;
 }
 /* scroll-down indicator */
