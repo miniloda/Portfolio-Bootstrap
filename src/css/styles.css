@@ -30,6 +30,10 @@ i{
 /* end of general styles */
 
 /* start of navbar styles */
+a>i{
+  width:20px;
+  text-align: center;
+}
 li>a:hover{
     color:rgb(66, 75, 83) !important
 }
