@@ -70,35 +70,40 @@ li>a:hover{
 }
 
 /* Adds Space between the lines */
-/* .middle-bar{
+.middle-bar-normal{
     margin: 5px 0;
     width: 20px;
 }
-.bottom-bar{
+.bottom-bar-normal{
   width:10px;
-} */
-.middle-bar{
+}
+
+.middle-bar-active{
   margin:5px 0;
+  width: 30px;
+}
+.bottom-bar-active{
+  width:30px;
 }
 /* State when navbar is opened (START) */
-.navbar-toggler .top-bar {
+/* .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-}
+} */
 
-.navbar-toggler .middle-bar {
+/* .navbar-toggler .middle-bar {
     opacity: 0;
     filter: alpha(opacity=0);
-}
+} */
 
-.navbar-toggler .bottom-bar {
+/* .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
-}
+} */
 /* State when navbar is opened (END) */
 
 /* State when navbar is collapsed (START) */

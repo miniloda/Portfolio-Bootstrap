@@ -62,7 +62,33 @@ $('a[href*="#"]')
       }
     }
   });
+
   // REFACTOR: fix the  bug for the width of the box
+
+$("#NavButtons").click(()=>{
+  if($("#middle-bar").hasClass("middle-bar-normal")){
+    $("#middle-bar").removeClass("middle-bar-normal");
+    $("#middle-bar").addClass("middle-bar-active");
+    $("#bottom-bar").removeClass("bottom-bar-normal");
+    $("#bottom-bar").addClass("bottom-bar-active");
+    document.querySelector("#middle-bar").style.opacity = 0;
+    document.querySelector("#bottom-bar").style.transform = "rotate(-45deg)";
+    document.querySelector("#top-bar").style.transform = "rotate(45deg)";
+    document.querySelector("#top-bar").style.transformOrigin = "10% 10%";
+    document.querySelector("#bottom-bar").style.transformOrigin = "10% 90%";
+  }else{
+    $("#middle-bar").removeClass("middle-bar-active");
+    $("#middle-bar").addClass("middle-bar-normal");
+    $("#bottom-bar").removeClass("bottom-bar-active");
+    $("#bottom-bar").addClass("bottom-bar-normal");
+    document.querySelector("#middle-bar").style.opacity = 1;
+    document.querySelector("#bottom-bar").style.transform = "rotate(0deg)";
+    document.querySelector("#top-bar").style.transform = "rotate(0deg)";
+    document.querySelector("#top-bar").style.transformOrigin = "50% 50%";
+    document.querySelector("#bottom-bar").style.transformOrigin = "50% 50%";
+    
+  }
+})
 // let navEnabled = false;
 // document.querySelector(".navbar-toggler").addEventListener(("click"),()=>{
 //   console.log("clicked")
