@@ -26,9 +26,21 @@ i{
 .section-gap{
    padding-top: 25vh;
 }
+/* start of scrollbar styles */
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb{
+    background: #2E3D52;
+    border-radius: 100vw;
+    -webkit-border-radius: 100vw;
+    -moz-border-radius: 100vw;
+    -ms-border-radius: 100vw;
+    -o-border-radius: 100vw;
+}
 
+/* end of scrollbar styles */
 /* end of general styles */
-
 /* start of navbar styles */
 a>i{
   width:20px;
@@ -103,6 +115,10 @@ li>a:hover{
 /* .navbar-toggler .bottom-bar {
     transform: rotate(-45deg);
     transform-origin: 10% 90%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
 } */
 /* State when navbar is opened (END) */
 
